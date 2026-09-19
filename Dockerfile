@@ -8,4 +8,4 @@ RUN npm i
 
 RUN npm run build
 
-RUN node build
+ENTRYPOINT [ "node", "build" ]
