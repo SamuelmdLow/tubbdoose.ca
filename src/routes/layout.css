@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Nanum gothic';
+    src: url('$lib/fonts/Nanum_Gothic/NanumGothic-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Nanum gothic';
+    src: url('$lib/fonts/Nanum_Gothic/NanumGothic-Bold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Nanum gothic';
+    src: url('$lib/fonts/Nanum_Gothic/NanumGothic-ExtraBold.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Roboto serif';
+    src: url('$lib/fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf');
+}
+@font-face {
+    font-family: 'Roboto serif';
+    src: url('$lib/fonts/Roboto_Serif/RobotoSerif-Italic-VariableFont_GRAD,opsz,wdth,wght.ttf');
+    font-style: italic;
+}
+
+body {
+    --tubbdoose-light-blue: #cce5ff;
+
+    margin: 0;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    background: var(--tubbdoose-light-blue);
+
+    font-family: 'Nanum gothic';
+    overflow: clip;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto serif';
+}
