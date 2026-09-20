@@ -27,6 +27,7 @@
 body {
     --colour-tubbdoose-theme: #cce5ff;
     --colour-tubbdoose-theme-1: #5C7999;
+    --colour-tubbdoose-theme-2: #8FA7BF;
 
     --colour-black-100: #333;
     --colour-black-200: #444;
@@ -42,6 +43,8 @@ body {
     color: var(--colour-black-300);
     
     overflow: auto;
+
+    scrollbar-color: var(--colour-tubbdoose-theme-2) #eee;
 }
 
 h1, h2, h3, h4 {

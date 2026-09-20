@@ -90,6 +90,7 @@
     }
 
     .icon {
+        padding-top: 1em;
         margin: 1em auto;
         width: 100px;
         @media screen and (min-width: 1000px) {
@@ -97,6 +98,7 @@
         }
         @media screen and (min-width: calc(calc(1100px + 13em) + 200px)) {
             display: block;
+            padding: 0;
             margin: 0;
             width: 200px;
             position: fixed;
@@ -140,7 +142,7 @@
                 top: 5%;
                 bottom: 5%;
                 width: 2px;
-                background-color: var(--colour-tubbdoose-theme-1);
+                background-color: var(--colour-tubbdoose-theme-2);
             }
         }
     }
