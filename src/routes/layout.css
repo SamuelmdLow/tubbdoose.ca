@@ -25,18 +25,39 @@
 }
 
 body {
-    --tubbdoose-light-blue: #cce5ff;
+    --colour-tubbdoose-theme: #cce5ff;
+    --colour-tubbdoose-theme-1: #5C7999;
+
+    --colour-black-100: #333;
+    --colour-black-200: #444;
+    --colour-black-300: #555;
 
     margin: 0;
-    display: flex;
     position: relative;
     min-height: 100vh;
-    background: var(--tubbdoose-light-blue);
+    background: var(--colour-tubbdoose-theme);
 
+    font-size: 18px;
     font-family: 'Nanum gothic';
-    overflow: clip;
+    color: var(--colour-black-300);
+    
+    overflow: auto;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Roboto serif';
+    text-box: trim-start cap alphabetic;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    color: var(--colour-black-100);
+}
+h2, h3, h4 {
+    color: var(--colour-black-200);
+}
+
+h2 {
+    margin-top: 1.5em;
 }
