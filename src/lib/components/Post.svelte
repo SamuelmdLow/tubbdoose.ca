@@ -12,7 +12,9 @@
 <div class="post">
     <div class="icon">
         <time datetime={post.published_at}>{formatDateString(post.published_at)}</time>
-        <img src={"https://www.tubbdoose.com/static/images/intro.svg"} />
+        <a href={post.link}>
+        <img src={"https://www.tubbdoose.com/static/images/intro.svg"} alt={post.title}/>
+        </a>
     </div>
     <div class="content">
         <h3>{post.title}</h3>
