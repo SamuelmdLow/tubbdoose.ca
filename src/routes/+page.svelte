@@ -29,6 +29,16 @@
         <Ubyssey />
     </div>
 
+    <!--
+    <div class="blogroll">
+        <h2>Friends</h2>
+        <ul>
+            <li><a href="https://github.com/SamuelmdLow">Github</a></li>
+            <li><a href="https://mas.to/@tubbdoose">Mastodon</a></li>
+        </ul>
+    </div>
+    -->
+    
     <img class="icon" src={icon} alt="Little tubbdoose on skateboard." />
 
 </div>
@@ -105,6 +115,19 @@
                 bottom: 5%;
                 width: 2px;
                 background-color: var(--colour-tubbdoose-theme-2);
+            }
+        }
+    }
+
+    .blogroll {
+        padding-inline: 1.5em;
+        @media screen and (min-width: 1000px) {
+        position: fixed;
+        bottom: 0.5em;
+        right: calc(200px + 0.5em);
+        text-align: right;
+            ul {
+                list-style-position: inside;
             }
         }
     }
