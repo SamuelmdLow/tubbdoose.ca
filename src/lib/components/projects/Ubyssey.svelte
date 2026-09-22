@@ -9,11 +9,11 @@
         <i>Outstanding Website Design</i> which we won in 2026 while I was lead developer!
     </p>
     <p>I worked on the newspaper's website from 2023 to 2026. Here are some of my favourite contributions!</p>
-    <a href="https://itdoesntworkday.ubyssey.ca/">
-        <img class="floating" style:shape-outside={`url("${workday}")`} src={workday} alt="Itdoesn't workday." />
-    </a>
     <ul>
         <li>
+        <a href="https://itdoesntworkday.ubyssey.ca/">
+            <img class="floating" style:shape-outside={`url("${workday}")`} src={workday} alt="Itdoesn't workday." />
+        </a>
         <b>An elaborate spoof of <i>Workday Student</i></b> called <a href="https://itdoesntworkday.ubyssey.ca/"><i>ItDoesn’tWorkday</i></a>. It topped the dreaded subreddit for a good period!
         </li>
         <li>
@@ -29,9 +29,12 @@
 </div>
 
 <style>
-    .floating {
-        max-width: 250px;
-        margin-left: 1em;
-        margin-bottom: 1em;
-    }
+
+.floating {
+    float: right;
+    max-width: min(250px, 50%);
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
 </style>

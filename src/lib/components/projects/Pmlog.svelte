@@ -15,9 +15,11 @@
 </div>
 
 <style>
+@media screen and (min-width: 700px) {
     .floating {
         max-width: 350px;
         margin-left: 1em;
         margin-bottom: 1em;
     }
+}
 </style>

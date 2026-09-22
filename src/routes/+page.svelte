@@ -57,7 +57,6 @@
         @media screen and (max-width: 1000px) {
             padding-block: 1.5em;
             margin-inline: auto;
-            width: fit-content;
             max-height: none;
             flex-direction: column;
         }
@@ -95,9 +94,10 @@
         width: 100%;
         flex-shrink: 0;
         box-sizing: border-box;
-
+        
         .introduction {
             font-size: 1.25em;
+            line-height: 1.5em;
         }
 
         ul {
@@ -111,6 +111,10 @@
 
         @media screen and (min-width: 1000px) {
             max-width: 500px;
+
+            h1 {
+                font-size: 2.5em;
+            }
 
             &::after {
                 content: "";

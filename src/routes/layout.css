@@ -54,7 +54,7 @@ h1, h2, h3, h4 {
 
 h1 {
     margin-bottom: 0.5em;
-    font-size: 2.5em;
+    font-size: 2em;
     color: var(--colour-black-100);
 }
 h2 {
@@ -91,13 +91,6 @@ a {
     }
 }
 
-img.floating {
-    float: right;
-    max-width: 200px;
-    shape-image-threshold: 0.5;
-    shape-margin: 1em;
-}
-
 label {
     display: flex;
     font-weight: bold;
@@ -119,4 +112,18 @@ button {
     border: none;
     border-radius: 1em;
     cursor: pointer;
+}
+
+img.floating {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+    img.floating {
+        float: right;
+        max-width: 200px;
+        shape-image-threshold: 0.5;
+        shape-margin: 1em;
+    }
 }
