@@ -76,6 +76,27 @@ a {
     }
 }
 
+.project {
+    margin-block: 2em;
+    h3 a {
+        &::before {
+            content: "/ ";
+        }
+        color: var(--colour-tubbdoose-theme-1);
+        text-decoration: none;
+        font-weight: normal;
+    }
+    p {
+        line-height: 1.5em;
+    }
+}
+
+img.floating {
+    float: right;
+    max-width: 200px;
+    shape-image-threshold: 0.5;
+    shape-margin: 1em;
+}
 
 label {
     display: flex;

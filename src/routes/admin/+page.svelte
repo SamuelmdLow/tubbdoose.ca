@@ -7,7 +7,6 @@
     let url = $state("");
     let image = $state("");
 
-    let deleting = $state(false);
     let dialog;
 
     function edit(postId:number) {

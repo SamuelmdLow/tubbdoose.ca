@@ -1,5 +1,5 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/tubbdoose-icon.svg';
 	import './layout.css'
 
 	let { children } = $props();

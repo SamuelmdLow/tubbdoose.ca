@@ -1,5 +1,6 @@
 <script>
     const {post} = $props();
+    import icon from '$lib/assets/tubbdoose-icon.svg';
 
     /**
      * @param { Date} date
@@ -12,14 +13,20 @@
 <div class="post">
     <div class="icon">
         <time datetime={post.published_at}>{formatDateString(post.published_at)}</time>
+        {#if post.url}
         <a href={post.url}>
-        <img src={post.image} alt={post.title}/>
+            <img src={post.image ? post.image : icon} alt={post.title}/>
         </a>
+        {:else}
+            <img src={post.image ? post.image : icon} alt={post.title}/>
+        {/if}
     </div>
     <div class="content">
         <h3><a href={post.url}>{post.title}</a></h3>
         <p>{post.lede}</p>
+        {#if post.url}
         <div class="link"><a href={post.url}>Read more.</a></div>
+        {/if}
     </div>
 </div>
 
@@ -27,7 +34,6 @@
     .post {
         display: flex;
         gap: 1em;
-        margin-bottom: 1em;
     }
     .icon {
         display: flex;
