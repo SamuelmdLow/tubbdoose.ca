@@ -11,9 +11,11 @@
     <div class="blog-sidebar">
         <h1>Hi. I'm Sam Low.</h1>
         <p class="introduction">I'm a recent UBC computer science graduate interested in using ML and design for journalism.</p>
+        <p class="introduction">Find me on <a rel="me" href="https://github.com/SamuelmdLow">GitHub</a> and <a rel="me" href="https://mas.to/@tubbdoose">Mastodon</a>.</p>
 
         <h2>Blogs</h2>
 
+        {#if data.posts.length > 0}
         <ul class="blog-list">
             {#each data.posts as post}
                 <li>
@@ -21,6 +23,9 @@
                 </li>
             {/each}
         </ul>
+        {:else}
+        <p>Come back here soon...</p>
+        {/if}
     </div>
 
     <div class="projects">
