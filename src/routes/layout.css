@@ -71,4 +71,31 @@ li {
 
 a {
     color: var(--colour-tubbdoose-theme-1);
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+
+label {
+    display: flex;
+    font-weight: bold;
+}
+input {
+    margin-left: 1em;
+    padding: 0.25em;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--colour-tubbdoose-theme-2);
+    font-size: 1em;
+    color: var(--color-black-300);
+}
+button {
+    padding: 0.5em 1em;
+    background-color: var(--colour-tubbdoose-theme-1);
+    color: #eee;
+    font-size: 1em;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
 }

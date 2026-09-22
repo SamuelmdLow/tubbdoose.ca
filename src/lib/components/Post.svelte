@@ -5,21 +5,21 @@
      * @param { Date} date
      */
     function formatDateString(date) {
-        return new Intl.DateTimeFormat("en-US").format(date);
+        return new Intl.DateTimeFormat("en-US").format(new Date(date));
     }
 </script>
 
 <div class="post">
     <div class="icon">
         <time datetime={post.published_at}>{formatDateString(post.published_at)}</time>
-        <a href={post.link}>
-        <img src={"https://www.tubbdoose.com/static/images/intro.svg"} alt={post.title}/>
+        <a href={post.url}>
+        <img src={post.image} alt={post.title}/>
         </a>
     </div>
     <div class="content">
-        <h3>{post.title}</h3>
+        <h3><a href={post.url}>{post.title}</a></h3>
         <p>{post.lede}</p>
-        <div class="link"><a href={post.link}>Read more.</a></div>
+        <div class="link"><a href={post.url}>Read more.</a></div>
     </div>
 </div>
 
@@ -27,7 +27,7 @@
     .post {
         display: flex;
         gap: 1em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     .icon {
         display: flex;
@@ -59,17 +59,14 @@
             display: contents;
             font-size: 1em;
         }
+        h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
         .link {
             margin-top: 1em;
             font-size: 0.8em;
             font-weight: 600;
-            color: var(--colour-black-100);
-            a {
-                color: inherit;
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
         }
     }
 </style>

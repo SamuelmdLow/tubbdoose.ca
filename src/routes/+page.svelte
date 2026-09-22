@@ -156,13 +156,18 @@
             shape-image-threshold: 0.5;
             shape-margin: 1em;
         }
-        .project h3 a {
-            &::before {
-                content: "/ ";
+        .project {
+            h3 a {
+                &::before {
+                    content: "/ ";
+                }
+                color: var(--colour-tubbdoose-theme-1);
+                text-decoration: none;
+                font-weight: normal;
             }
-            color: var(--colour-tubbdoose-theme-1);
-            text-decoration: none;
-            font-weight: normal;
+            p {
+                line-height: 1.5em;
+            }
         }
     }
 </style>
