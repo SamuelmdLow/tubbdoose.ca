@@ -6,7 +6,7 @@
      * @param { Date} date
      */
     function formatDateString(date) {
-        return new Intl.DateTimeFormat("en-US").format(new Date(date));
+        return new Intl.DateTimeFormat("en-GB").format(new Date(date));
     }
 </script>
 
@@ -57,6 +57,7 @@
             object-fit: cover;
             object-position: center;
             border: 2px solid white;
+            color: white;
         }
     }
     .content {
