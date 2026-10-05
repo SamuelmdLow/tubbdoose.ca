@@ -9,23 +9,29 @@
 
 <div class="container">
     <div class="blog-sidebar">
-        <h1>Hi. I'm Sam Low.</h1>
-        <p class="introduction">I'm a recent UBC computer science graduate interested in using ML and design for journalism.</p>
-        <p class="introduction">Find me on <a rel="me" href="https://github.com/SamuelmdLow">GitHub</a> and <a rel="me" href="https://mas.to/@tubbdoose">Mastodon</a>.</p>
+        <div class="bio">
+            <h1>Hi. I'm Sam Low.</h1>
+            <div class="introduction">
+            <p>I'm a recent UBC computer science graduate interested in using ML and design for journalism!</p>
+            <p><a rel="me" href="https://github.com/SamuelmdLow">GitHub</a>, <a rel="me" href="https://mas.to/@tubbdoose">Mastodon</a>.</p>
+            </div>
+        </div>
 
-        <h2>Blogs</h2>
+        <div class="blogs">
+            <h2>Blogs</h2>
 
-        {#if data.posts.length > 0}
-        <ul class="blog-list">
-            {#each data.posts as post}
-                <li>
-                    <Post post={post} />
-                </li>
-            {/each}
-        </ul>
-        {:else}
-        <p>Come back here soon...</p>
-        {/if}
+            {#if data.posts.length > 0}
+            <ul class="blog-list">
+                {#each data.posts as post}
+                    <li>
+                        <Post post={post} />
+                    </li>
+                {/each}
+            </ul>
+            {:else}
+            <p>Come back here soon...</p>
+            {/if}
+        </div>
     </div>
 
     <div class="projects">
@@ -55,10 +61,17 @@
         display: flex;
 
         @media screen and (max-width: 1000px) {
-            padding-block: 1.5em;
+            padding-block: 1em;
             margin-inline: auto;
             max-height: none;
             flex-direction: column;
+
+            .blog-sidebar {
+                padding-bottom: 0.5em;
+            }
+            .projects {
+                border-top: 1px dotted var(--colour-tubbdoose-theme-1);
+            }
         }
     }
 
@@ -81,9 +94,11 @@
     }
 
     .projects, .blog-sidebar {
-        padding-inline: 1.5em;
+        margin-inline: auto;
+        padding-inline: 1em;
         max-width: 700px;
         @media screen and (min-width: 1000px) {
+            margin-inline: 0;
             padding: 3em;
             overflow: auto;
         }
@@ -98,10 +113,14 @@
         .introduction {
             font-size: 1.25em;
             line-height: 1.5em;
+            margin-block: 1em;
+            p {
+                margin-block: 0.5em;
+            }
         }
 
         ul {
-            margin-block: 2em;
+            margin-block: 1em;
             padding: 0;
             list-style: none;
             li {

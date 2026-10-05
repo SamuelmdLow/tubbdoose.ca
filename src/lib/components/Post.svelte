@@ -41,19 +41,18 @@
         flex-shrink: 0;
         time {
             margin-inline: auto;
-            margin-bottom: 0.75em;
+            margin-bottom: 0.5em;
             
             font-size: 0.75em;
             font-weight: bold;
-            text-decoration: underline;
-            color: var(--colour-black-100);
+            color: var(--colour-black-200);
             text-box: trim-start cap alphabetic;
         }
         img {
             width: 75px;
             aspect-ratio: 1;
             height: auto;
-            border-radius: 1em;
+            border-radius: 0.75em;
             object-fit: cover;
             object-position: center;
             border: 2px solid white;
@@ -62,6 +61,7 @@
     }
     .content {
         text-box: trim-start cap alphabetic;
+        line-height: 1.5em;
         h3, p {
             display: contents;
             font-size: 1em;
@@ -71,7 +71,7 @@
             text-decoration: none;
         }
         .link {
-            margin-top: 1em;
+            display: contents;
             font-size: 0.8em;
             font-weight: 600;
         }
